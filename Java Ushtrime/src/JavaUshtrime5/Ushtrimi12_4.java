@@ -1,5 +1,9 @@
 /*
- 
+ 12345
+ 1234
+  123
+   12
+    1
  */
 package JavaUshtrime5;
 
@@ -28,6 +32,7 @@ public class Ushtrimi12_4 {
             }
             System.out.println();
         }
+        scn.close();
     }
     
 }

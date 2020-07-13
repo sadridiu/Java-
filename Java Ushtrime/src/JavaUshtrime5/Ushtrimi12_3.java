@@ -1,7 +1,9 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+    1
+   12
+  123
+ 1234
+12345
  */
 package JavaUshtrime5;
 
@@ -13,23 +15,25 @@ import java.util.Scanner;
  */
 public class Ushtrimi12_3 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        
-        System.out.println("Jepni nr e rreshtave");
-        Scanner scn = new Scanner (System.in);
-        int n = scn.nextInt(); 
-        
-        for(int i = n; i >= 1; --i) {
-            for(int j = 1; j <= i; ++j) {
-                System.out.print(j);
-            }
-            System.out.println();
-        }
-    }
-    
-    }
-    
+        Scanner scn = new Scanner(System.in);
 
+        System.out.println("Jepni nr e rreshtave"); 
+        int n = scn.nextInt();
+
+        for (int i = 0; i <= n; i++) {
+            int r = i;
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print(" ");
+            }
+            for (int k = 1; k <= i; k++) {
+                System.out.print(r);
+                r--;
+            }
+            System.out.println("");
+        }
+        scn.close();
+
+    }
+
+}

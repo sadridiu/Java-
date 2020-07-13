@@ -22,13 +22,15 @@ public class Ushtrimi12_2 {
         Scanner scn = new Scanner (System.in);
         int n = scn.nextInt();
         for (int i = 1;i <= n;i++)
-        {
-            for(int j = n; j>0; j--)
-            {
-                System.out.print(j);
+        { int r = 1;
+            for(int j = n; j>i-1; j--)
+            {  
+                System.out.print(r);
+                r++;
             }
             System.out.println();
         }
+        scn.close();
     }
     }
     

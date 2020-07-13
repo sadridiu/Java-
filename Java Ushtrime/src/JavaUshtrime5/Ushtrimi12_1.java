@@ -28,6 +28,7 @@ public class Ushtrimi12_1 {
             }
             System.out.println();
         }
+        scn.close();
     }
     
 }
