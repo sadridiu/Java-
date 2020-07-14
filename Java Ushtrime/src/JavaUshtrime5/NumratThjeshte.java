@@ -17,20 +17,21 @@ public class NumratThjeshte {
         int sasia=0;
         int numer=2;
         
-        System.out.println("20 numrat e pa re thjeshte janne:\n");
+        System.out.println("20 numrat e pare thjeshte janne:\n");
         
-        while (sasia<SASIA_NR_TE_THJESHTE){
+        while (sasia < SASIA_NR_TE_THJESHTE){
         
             boolean iThjeshte=true;
         
-        for(int plotpjestues=2;plotpjestues<=numer/2;plotpjestues++){
-            if(numer %plotpjestues==0){
-                iThjeshte=false;
+        for(int plotpjestues = 2;plotpjestues <= numer/2;plotpjestues++){
+            if(numer % plotpjestues == 0){
+                iThjeshte = (false);
                 break;
             }
             if(iThjeshte){
                 sasia++;
-                if(sasia % SASIA_NR_TE_THJESHTE_PER_RRESHT==0){
+                
+                if(sasia % SASIA_NR_TE_THJESHTE_PER_RRESHT == 0){
                     System.out.println(numer);
                 }
                 else System.out.println(numer+" ");
