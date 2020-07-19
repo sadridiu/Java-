@@ -27,4 +27,5 @@ public class Aplet extends JApplet
      g2.draw(elips);
      g2.draw(seg);
      g2.drawString("Hello", 100, 220);
-    }}
+    }
+}
