@@ -30,7 +30,6 @@ public class Palindrome {
                     }
                     fillim++;
                     fund--;
-                    
                 }
         if(Palindrome)
             System.out.println(s+" eshte palindrome");

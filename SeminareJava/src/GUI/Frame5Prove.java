@@ -25,11 +25,11 @@ public class Frame5Prove extends javax.swing.JFrame
         menu.add(item1);menu.add(item2);
         JMenuBar menuBar=new JMenuBar();
         setJMenuBar(menuBar);
-        setJMenuBar(menuBar);
         
         lbl1=new JLabel("Notat");
         lbl2=new JLabel("Mesatarja");
         area=new JTextArea(111,10);
+        area.setEditable(false);
         btn1=new JButton("Jepn Notat");
         btn2=new JButton("LLogarit");
         btn2.setEnabled(false);

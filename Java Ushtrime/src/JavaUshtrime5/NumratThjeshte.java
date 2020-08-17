@@ -12,33 +12,35 @@ package JavaUshtrime5;
 public class NumratThjeshte {
     public static void main(String[]args)
     {
-        final int SASIA_NR_TE_THJESHTE=20;
-        final int SASIA_NR_TE_THJESHTE_PER_RRESHT=10;
+        
+        
         int sasia=0;
-        int numer=2;
+        int numer=4;
         
         System.out.println("20 numrat e pare thjeshte janne:\n");
         
-        while (sasia < SASIA_NR_TE_THJESHTE){
         
-            boolean iThjeshte=true;
-        
-        for(int plotpjestues = 2;plotpjestues <= numer/2;plotpjestues++){
-            if(numer % plotpjestues == 0){
-                iThjeshte = (false);
-                break;
-            }
-            if(iThjeshte){
-                sasia++;
+        for(int i = 2;i <= numer/2;i++){
+           
+            if(numer  % i == 0)
+                    continue;
+                else {
+                        if(sasia % 5 == 0){
+                             System.out.println(numer);
+                     
+                        }else { 
+                            
+                            System.out.print(numer +" ");
                 
-                if(sasia % SASIA_NR_TE_THJESHTE_PER_RRESHT == 0){
-                    System.out.println(numer);
+                        }
+                    sasia++; 
+                    if(sasia % 20 == 0){
+                        break;
+                    }
                 }
-                else System.out.println(numer+" ");
-            }
             numer++;
         }
     }
     }
     
-}
+

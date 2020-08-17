@@ -33,9 +33,10 @@ public class Ushtrimi8 {
         
         for (int i = 0;i <=nr_per_rhjesht;i++){
         if(sasia % nr_per_rhjesht == 0){
-            System.out.print((char)(k1 + Math.random() * (k2-k1+1))+" ");
+            System.out.println((char)(k1 + Math.random() * (k2-k1+1))+" ");
+            sasia++;
         }
-        else System.out.println((char)(k1 + Math.random() * (k2-k1+1))+" ");
+        else System.out.print((char)(k1 + Math.random() * (k2-k1+1))+" ");
         }
     }
 }

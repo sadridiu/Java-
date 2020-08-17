@@ -12,8 +12,8 @@ package GUI;
 public class Test2 {
    public static void main (String[] args)
    {
-       Frame6Prove frame=new Frame6Prove ();
+       Frame6 frame=new Frame6();
        frame.setTitle("hyrje ne gui");
        frame.show();
-   }
+   } 
 }
